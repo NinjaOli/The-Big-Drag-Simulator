@@ -10,16 +10,19 @@ class MiniChallenge {
             desc2[desc2["a partner."] = 1] = "Time Freeze. The queens must each estimate the duration of 10 seconds and hit their button when they think that time has passed. The queen that hits their button at the time that is closet to 10 seconds will win.";
             desc2[desc2["noodles."] = 2] = "Expulsion. The queens will race to remove 1000 balls from their container. The first queen to finish will win.";
             desc2[desc2["hip pads."] = 3] = "Release. The queens must each manoverue a pole around a maze without it touching the sides. The queens will compete for the fastest time and will receive a 2 second time penatly each time the pole touches the side of the maze. The queen that finishes in the fastest time will win.";
-            desc2[desc2["balls."] = 4] = "Extraction. The queens will face off in a series of 1 vs 1 battles. In each battle, the first queen to remove all 25 tabs from their side of the table and hit their button will win. The queen that wins the tournament overall will win this challenge.";
+            desc2[desc2["balls."] = 4] = "Extraction. In this challenge the queens will face off in a series of 1 vs 1 battles. In each battle, the first queen to remove all 25 tabs from their side of the table and hit their button will win. The queen that wins the tournament overall will win this challenge.";
             desc2[desc2["past Drag Race contestants"] = 5] = "Multisphere. Each queen will release 20 balls onto the floor of the playing area. The queens must then pick up all the balls and place them inside the container. The queen that does this in the fastest time will win.";
             desc2[desc2["a celebrity."] = 6] = "Motion Build. Whilst standing on a rotating platform, each queen must transfer the cylinders from the box to the podium in an attempt to construct the highest tower. The game ends for a queen when their tower falls. The queen that builds the highest tower before it falls will win.";
             desc2[desc2["a celebrity."] = 7] = "Pass. The queens must transfer a block between the red and white podiums until it reaches the final gold podium by passing it through the cylinders on the table without knocking them over. The queens will compete for the fastest time and will receive a 2 second time penatly each time a cylinder is knocked over. The queen that finishes in the fastest time will win.";
-            desc2[desc2["a celebrity."] = 8] = "Plummet. The queens must remove all of the tabs from the tower so that their ball hits the red zone at the bottom of the tower first. The queen that finishes first will win."
+            desc2[desc2["a celebrity."] = 8] = "Plummet. The queens must remove all of the tabs from their tower so that their ball hits the red zone at the bottom of the tower first. The queen that finishes first will win."
             desc2[desc2["a celebrity."] = 9] = "Downfall. The queens will each have 30 seconds to drop balls from the suspended container using the button in an effort to land them in the container that is spinning on the rotating platform. The queen that lands the most balls in the container will win."
             desc2[desc2["a celebrity."] = 10] = "Selection. The queens will be given a colour. This colour will be either red or blue. Based on the colour they are given, the queens must remove all of the matching coloured balls from their posts using one finger in an attempt to finish in the fastest time. The queens will receive a 1 second time penatly each time a wrong coloured ball is removed. The queen that finishes in the fastest time will win."
             desc2[desc2["a celebrity."] = 11] = "Orbit. Whilst blindfolded, the queens must exit the red zone and walk around the octagonal path before re-entering the red area. They must do this in an attempt to finish in the fastest time. The queens will receive a 3 second time penatly each time they step outside of the lines. The queen that finishes in the fastest time will win."
             desc2[desc2["a celebrity."] = 12] = "Rotation. The queens will have 30 seconds to roll balls down the beam and into the revolving target hole. The queen that lands the most balls in the hole will win."
             desc2[desc2["a celebrity."] = 13] = "Summit. The queens will each have 30 seconds to throw balls into the target box which is located at the top of the collum. The queen that lands the most balls in the box will win."
+            desc2[desc2["a celebrity."] = 14] = "Construction. The queens must build a tower using as many of the cylinders as possible. The game starts for a queen when they place the first cylinder on the podium and stops when their tower falls. The queen that builds the highest tower before it falls will win."
+            desc2[desc2["a celebrity."] = 15] = "Drop. In this challenge the queens will face off in a series of 1 vs 1 battles. In each battle the queens will stand on either side of the playing area and will hold one end of the two rods. The queens must tilt the rods so that the ball drops into their container once they are separated. In each battle, the queen who's container was closest to being entered by the ball will win. The queen that wins the tournament overall will win this challenge."
+            desc2[desc2["a celebrity."] = 16] = "Multishot. The queens will have 10 seconds to fill as many containers will a ball as possible by throwing balls into them. The queen that fills the most containers will win."
         })(desc2 || (desc2 = {}));
         //reading and puppet challenges:
         if (totalCastSize >= 10 && currentCast.length == 7 && !all_stars && !lipsync_assassin && !all_winners && episodeCount > 3 && !readingCheck || currentCast.length == totalCastSize && (all_stars || lipsync_assassin) && !readingCheck || episodeCount == 1 && all_winners && !readingCheck) {
@@ -34,7 +37,7 @@ class MiniChallenge {
             description.innerHTML = "Bring in the puppets! In this week's mini-challenge the queens will parody eachother using puppets!";
         }
         else {
-            description.innerHTML = "This week's mini-challenge is a cube challenge and it is called " +  desc2[randomNumber(0, 13)];
+            description.innerHTML = "This week's mini-challenge is a Cube Challenge and it is called " +  desc2[randomNumber(0, 16)];
         }
     }
     rankPerformances() { 
@@ -355,7 +358,7 @@ class MarketingChallenge {
             desc2[desc2["an Eyeshadow Palette."] = 26] = "an Eyeshadow Palette.";
             desc2[desc2["their Hometowns."] = 27] = "their Hometowns.";
         })(desc2 || (desc2 = {}));
-        description.innerHTML = "The queens will participate in " + desc1[whatChallengeIs] + desc2[randomNumber(0, 27)];
+        description.innerHTML = "This week the queens will each create  " + desc1[whatChallengeIs] + desc2[randomNumber(0, 27)];
         episodeChallenges.push("Advert");
     }
     rankPerformances() {
@@ -400,7 +403,7 @@ class DanceChallenge {
             desc1[desc1["Dragoton."] = 9] = "Dragoton.";
             desc1[desc1["Ruets."] = 10] = "Ruets.";
         })(desc1 || (desc1 = {}));
-        description.innerHTML = "The queens will participate in a dance number about " + desc1[randomNumber(0, 10)];
+        description.innerHTML = "This week the queens will take part in a dance number entitled " + desc1[randomNumber(0, 10)];
         if (randomNumber(0, 100) >= 50) {
             episodeChallenges.push("Dance");
         } else {
@@ -464,14 +467,14 @@ class DesignChallenge {
 
         })(desc1 || (desc1 = {}));
         if (currentCast.length == 6 && makeoverCounter == false && team == false && currentCast != firstCast && currentCast != secondCast && !uk3Premiere && !s9Premiere && !conjoinedQueens) {
-            let makeoverPeole = ["everyday people", "soldiers", "doctors", "their family members to", "the pitcrew", "production staff", "youtubers", "politicians", "marines", "their friends to", "veterans", "straight men", "babies"];
-            description.innerHTML = "It's the makeover challenge! The queens will make "+ makeoverPeole[randomNumber(0, makeoverPeole.length - 1)] +" their drag sisters!";
+            let makeoverPeole = ["everyday people", "soldiers", "teachers", "their family members to", "the pitcrew", "production staff", "youtubers", "politicians", "marines", "their friends to", "veterans", "straight men", "babies", "each other", "gay men", "lesbians", "the judges", "celebrites"];
+            description.innerHTML = "This weeks it's the makeover challenge! The queens will make "+ makeoverPeole[randomNumber(0, makeoverPeole.length - 1)] +" their drag sisters! Each queen will need to style a look that SCREAMS Drag Family Resmblence and help their makeover partner prepare for a lip-sync to a Rupaul classic!";
         }
         else if (currentCast.length == totalCastSize && (uk3Premiere || s9Premiere) && !s9PremiereCheck && !uk3PremiereCheck) {
             description.innerHTML = "The queens will bring it to the runway and serve not one but two looks!";
         }
         else
-            description.innerHTML = "The queens will do outfits with " + desc1[randomNumber(0, 23)];
+            description.innerHTML = "This week, the queens will be putting their design skills to the test as they werk the runway with outfits that they made out of " + desc1[randomNumber(0, 23)];
     }
     rankPerformances() {
         for (let i = 0; i < currentCast.length; i++)
@@ -619,7 +622,7 @@ class ImprovChallenge {
             desc1[desc1["pageant, the Miss Loose Jaw Pageant."] = 11] = "pageant, the Miss Loose Jaw Pageant.";
             desc1[desc1["intimate chat show called Pink Table Talk."] = 12] = "intimate chat show called Pink Table Talk.";
         })(desc1 || (desc1 = {}));
-        description.innerHTML = "The queens will improvise in a " + desc1[whatChallengeIs];
+        description.innerHTML = "This week, the queens will improvise in a " + desc1[whatChallengeIs];
         if (whatChallengeIs == 0) {
             episodeChallenges.push("Political Debate");
         } else if (whatChallengeIs == 4) {
@@ -659,7 +662,7 @@ function improvChallenge() {
 class SnatchGame {
     generateDescription() {
         let description = document.querySelector("p#Description");
-        description.innerHTML = "Today's challenge is... SNATCH GAME!! The queens will do funny celebrity impersonations!";
+        description.innerHTML = "This week's challenge is... SNATCH GAME!! The queens will do funny celebrity impersonations!";
         if (randomNumber(0, 100) >= 95) {
             episodeChallenges.push("A Snatch Game Double Header");
         } else {
@@ -727,7 +730,7 @@ class Rusical {
             desc[desc["Hairspray: The Rusical."] = 21] = "Hairspray: The Rusical.";
             desc[desc["Burlesque: The Rusical."] = 22] = "Burlesque: The Rusical.";
         })(desc || (desc = {}));
-        description.innerHTML = "Today's challenge is... THE RUSICAL!! The queens were tasked to take part in " + desc[randomNumber(0, 22)];
+        description.innerHTML = "This week's challenge is... THE RUSICAL!! The queens were tasked to take part in " + desc[randomNumber(0, 22)];
     }
     rankPerformances() {
         for (let i = 0; i < currentCast.length; i++)
@@ -786,7 +789,7 @@ class Ball {
                 {name: "Shop Shop Ladies", themes: "Shop-ulence, She Buys Everything! and Divi Divas"},
             ];
             let number = randomNumber(0, balls.length - 1);
-            description.innerHTML = "Today's challenge is... THE BALL! The " + balls[number].name + " Ball!! And the themes are: " + balls[number].themes + ".";
+            description.innerHTML = "This week's challenge is... THE BALL! The " + balls[number].name + " Ball!! And the themes are: " + balls[number].themes + ". The last look must be created from scratch!";
         } else {
             let desc1;
             (function (desc1) {
@@ -864,7 +867,7 @@ class Rumix {
             desc1[desc1["Hey Sis, It's Christmas."] = 14] = "Hey Sis, It's Christmas.";
             desc1[desc1["Queen of the North."] = 15] = "Queen of the North.";
         })(desc1 || (desc1 = {}));
-        description.innerHTML = "Today's challenge is... the rumix! The queens will make a verse and a choreography for " + desc1[randomNumber(0, 15)];
+        description.innerHTML = "This week's challenge is... the rumix! The queens will make a verse and a choreography for " + desc1[randomNumber(0, 15)];
     }
     rankPerformances() {
         for (let i = 0; i < currentCast.length; i++)
@@ -914,7 +917,7 @@ class GirlGroup {
             desc1[desc1["Can I Get An Amen?"] = 19] = "Can I Get An Amen?";
             desc1[desc1["Oh No She Betta Don't!"] = 20] = "Oh No She Betta Don't!";
         })(desc1 || (desc1 = {}));
-        description.innerHTML = "The remaining queens will record vocals and perform in a Girl Group number for the original song " + desc1[randomNumber(0, 20)] + ".";
+        description.innerHTML = "This week, the queens will headline the YASStombery festival in girl groups with the new hit song " + desc1[randomNumber(0, 20)] + ".";
     }
     rankPerformances() {
         for (let i = 0; i < currentCast.length; i++)
@@ -949,7 +952,7 @@ class TalentShow {
     generateDescription() {
         document.body.style.backgroundImage = "url('image/talent.webp')";
         let description = document.querySelector("b#Description");
-        description.innerHTML = "The contestants will prove themselves in a talent show, where they will need to bring all they've got!";
+        description.innerHTML = "This week, the queens will prove themselves in a talent show, where they will need to bring all they've got!";
     }
     rankPerformances() {
         for (let i = 0; i < currentCast.length; i++)
@@ -1469,22 +1472,22 @@ function pairMaking() {
             team5.push(queen);
             castPairs.splice(castPairs.indexOf(queen), 1);
         }
-        screen.createBigText("Pairs");
+        screen.createBigText("This is a pairs challenge! And the pairs are...");
         screen.createImage(team1[0].image);
         screen.createImage(team1[1].image);
-        screen.createBold(team1[0].getName() + " and " + team1[1].getName() + " are paired together.");
+        screen.createBold("Team" + team1[0].getName() + " and " + team1[1].getName());
         screen.createImage(team2[0].image);
         screen.createImage(team2[1].image);
-        screen.createBold(team2[0].getName() + " and " + team2[1].getName() + " are paired together.");
+        screen.createBold("Team" + team2[0].getName() + " and " + team2[1].getName());
         screen.createImage(team3[0].image);
         screen.createImage(team3[1].image);
-        screen.createBold(team3[0].getName() + " and " + team3[1].getName() + " are paired together.");
+        screen.createBold("Team" + team3[0].getName() + " and " + team3[1].getName());
         screen.createImage(team4[0].image);
         screen.createImage(team4[1].image);
-        screen.createBold(team4[0].getName() + " and " + team4[1].getName() + " are paired together.");
+        screen.createBold("Team" + team4[0].getName() + " and " + team4[1].getName());
         screen.createImage(team5[0].image);
         screen.createImage(team5[1].image);
-        screen.createBold(team5[0].getName() + " and " + team5[1].getName() + " are paired together.");
+        screen.createBold("and finally Team" + team5[0].getName() + " and " + team5[1].getName());
     }
 }
 //runway:
@@ -9286,6 +9289,8 @@ let tynomi = new Queen("Tynomi Banks", 5, 6, 5, 7, 5, 7, 10, "Tynomi");
 let can_season1 = [anastarzia, boa, ilona, jimbo, juice, kiara, kyne, lemon, priyanka, rita, bobo, tynomi];
 //ALL STARS 8
 let allstars_8 = [alexism, darienne, heidi, jaymes, jessica, jimbo, kahanna, kandym, lala, monica, kasha, naysha];
+//ALL STARS 9
+let allstars_9 = [mik, angeria, jorgeous, kameron, ninaw, plastique, roxxxy, vanessa];
 //CAN SEASON 2
 let adriana = new Queen("Adriana", 9, 6, 7, 6, 6, 8, 5, "Adriana");
 let beth = new Queen("Beth", 5, 5, 6, 3, 6, 5, 4, "Beth");
@@ -9441,6 +9446,7 @@ let pitita = new Queen("Pitita", 11, 6, 8, 13, 10, 11, 9, "Pitita");
 let vania = new Queen("Vania Vainilla", 8, 12, 8, 10, 8, 10, 9, "VaniaVainilla");
 let visa = new Queen("Visa", 7, 8, 8, 9, 9, 12, 12, "Visa");
 let dres_season3 = [bestiah, chanel, clover, chuchi, hornella, macarena, maria, kellyRoller, pakita, pink, pitita, vania, visa];
+let dresas = [sethlas, hornella, juriji, onyx, pakita, pink, pupi, sagittaria, samantha];
 //DRAG RACE ITALIA S1
 let ava = new Queen("Ava Hangar", 8, 7, 5, 5, 6, 6, 6, "Ava");
 let divinity = new Queen("Divinity", 9, 6, 8, 7, 6, 8, 7, "Divinity");
@@ -9585,9 +9591,10 @@ let ofd1 = [mollyOFD, kaosOFD, hannahOFD, jinkxOFD, victoriaOFD, briocheeOFD, el
 let pangina = new Queen("Pangina Heals", 9, 7, 14, 11, 8, 13, 14, "Pangina");
 let ukvstw = [baga, blu, cheryl, janey, jimbo, jujubee, lemon, monique, pangina];
 let canvstw = [anita, icesis, kendall, rajah, rita, silky, stephanie, victoriaS, vanity];
+let ukvstw2 = [hannah, scarlet, tia, choriza, mayhem, grandedame, gothy, jonbers, arantxa, keta, marinaSummers];
 let duas = [art, cocoj, beverly, molly, minnie, ivanna, amyl, pomara, etc, ritaMenu];
 let cas = [ilona, juice, bobo, synthia, kendall, stephanie, kimmy, fiercalicious, jadashada, irma, oceane, suki];
-let ukas = [cheryl, crystaluk, baga, sister, asttina, veronica, charity, victoriaS, baby, dakota, ellie, jonbers]
+let ukas = [cheryl, crystaluk, baga, sister, asttina, veronica, charity, victoriaS, baby, dakota, ellie, jonbers];
 //all possible queens:
 let allCustomQueens = [];
 if (localStorage.getItem("customQueens") != null)
@@ -12648,7 +12655,8 @@ let twoQueensRelation1 = [
     "are talking about how someone tried to drown her in the ocean.",
     "want to save eachother.",
     "smoke some cigarettes together.",
-    "learnt their lip sync words together."
+    "learnt their lip sync words together.",
+    "share a heartfelt conversation after they both were ready to quit the competiton"
 ];
 let twoQueensRelation2 = [
     "are talking a lot and the others think that they are dating.",
@@ -12705,6 +12713,7 @@ let twoQueensRelation4_2 = [
     "says *go back to party city where they belong* to",
     "threw a glass of water at",
     "is getting into a fist fight with"
+    
 ];
 let twoQueensRelation5 = [
     "are talking about who is the trade of the season.",
@@ -12723,7 +12732,11 @@ let threeQueensRelation1 = [
 ];
 let threeQueensRelation2 = [
     "are talking a lot and they are bonding a lot.",
-    "shared personal memories to each other."
+    "shared personal memories to each other.",
+    "received letters from home.",
+    "received video calls to their friends and family",
+    "received phone calls to their friends and family",
+    "received a gift from home.",
 ];
 let threeQueensRelation3 = [
     "get into a heated debate about Pringles.",
