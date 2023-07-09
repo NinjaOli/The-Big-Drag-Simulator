@@ -465,7 +465,7 @@ class DesignChallenge {
         })(desc1 || (desc1 = {}));
         if (currentCast.length == 6 && makeoverCounter == false && team == false && currentCast != firstCast && currentCast != secondCast && !uk3Premiere && !s9Premiere && !conjoinedQueens) {
             let makeoverPeole = ["everyday people", "soldiers", "teachers", "their family members to", "the pitcrew", "production staff", "youtubers", "politicians", "marines", "their friends to", "veterans", "straight men", "babies", "each other", "gay men", "lesbians", "the judges", "celebrites"];
-            description.innerHTML = "This weeks it's the makeover challenge! The queens will make "+ makeoverPeole[randomNumber(0, makeoverPeole.length - 1)] +" their drag sisters! Each queen will need to style a look that SCREAMS Drag Family Resmblence and help their makeover partner prepare for a lip-sync to a Rupaul classic!";
+            description.innerHTML = "This week it's the makeover challenge! The queens will make "+ makeoverPeole[randomNumber(0, makeoverPeole.length - 1)] +" their drag sisters! Each queen will need to style a look that SCREAMS Drag Family Resmblence and help their makeover partner prepare for a lip-sync to a Rupaul classic!";
         }
         else if (currentCast.length == totalCastSize && (uk3Premiere || s9Premiere) && !s9PremiereCheck && !uk3PremiereCheck) {
             description.innerHTML = "The queens will bring it to the runway and serve not one but two looks!";
