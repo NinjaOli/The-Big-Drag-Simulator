@@ -262,9 +262,6 @@ class ComedyChallenge {
             whatChallengeIs = 1;
             episodeChallenges.push("Roast");
         } 
-        (function (desc1) {
-            desc1[desc1["a roast about "] = 1] = "the roast of ";
-        })(desc1 || (desc1 = {}));
         let desc2;
         (function (desc2) {
             desc2[desc2["love."] = 0] = "love.";
@@ -291,7 +288,7 @@ class ComedyChallenge {
             desc2[desc2["Carson Kressley."] = 21] = "Carson Kressley.";
             desc2[desc2["Rainbow."] = 22] = "Rainbow.";
         })(desc2 || (desc2 = {}));
-        description.innerHTML = "This week, the queens will need to bring their best comedy skills to the table as they take part in " + desc1[whatChallengeIs] + desc2[randomNumber(0, 22)];
+        description.innerHTML = "This week, the queens will need to bring their best comedy skills to the table as they take part in the roast of " + desc2[randomNumber(0, 22)];
     }
     rankPerformances() {
         for (let i = 0; i < currentCast.length; i++)
