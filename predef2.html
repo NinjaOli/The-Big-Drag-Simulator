@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag Race Simulator</title>
+    <link rel="icon" href="image/favicon.ico">
+    <link rel="stylesheet" href="css/style.light.css">
+    <script defer src="javascript/index.js"></script>
+    <script src="https://kit.fontawesome.com/65fd17a1f9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="dMainTitle">
+        <h1 id="MainTitle">Custom Predef Casts!</h1>
+    </div>
+    
+
+    <div id ="MainBlock">
+        <h2>🌎⭐️International All Stars⭐️🌎</h2>
+        <div>
+            <button onclick="predefCast(duas, 'all-stars', 'top3')">Down Under All Stars</button>
+            <button onclick="predefCast(cas, 'all-stars', 'LSFTC')">Canada All Stars</button>
+            <button onclick="predefCast(ukas, 'all-stars', 'top3')">UK All Stars</button>
+        </div>
+        <h2>🧔🏻‍♂️Out Of Drag Extravaganza🧔🏻‍♂️</h2>
+        <button onclick="predefCast(ofd1, 'all-winners', 'LSFTC')">OFDE Season 1</button>
+        <div>
+            <h3>Settings: <br></h3>
+            <input type="checkbox" id="immunity"> Add immunity
+            <input type="checkbox" id="disableDouble"> Disable double shantays and sashays
+            <input type="checkbox" id="riggory"> Disable Challenge Riggory
+            <input type="checkbox" id="riggoryLipsync"> Disable Lipsync Riggory
+            <input type="checkbox" id="rupaulm"> Choose Challenges
+            <p>Chocolate Bar Twist Settings: </p>
+            <input type="checkbox" id="chocolateBar"> Random
+            <input type="checkbox" id="chocolateBarChoosable"> Choosable
+            <p>Special Game Modes:</p>
+            <input type="checkbox" id="secret"> Secret Celebrity Drag Race Mode
+            <input type="checkbox" id="snatchonly"> Snatch Game Only Mode
+            <input type="checkbox" id="runwayonly"> Runway Smackdown Mode
+        </div>
+        <hr>
+        <div>
+            <p>
+                <big><a href="index.html" id="inblock">Back to main page</a></big>
+            </p>
+        </div>
+        <div id="result"></div>
+    </div>
+    <a href="#" class="toTop">
+        <i class="fa-solid fa-angle-up"></i>
+    </a>
+    <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+    <script>
+        kofiWidgetOverlay.draw('arainbow4u', {
+        'type': 'floating-chat',
+        'floating-chat.donateButton.text': 'Tip Rainbow!',
+        'floating-chat.donateButton.background-color': '#5bc0de',
+        'floating-chat.donateButton.text-color': '#323842'
+        });
+    </script>
+</body>
+</html>
+

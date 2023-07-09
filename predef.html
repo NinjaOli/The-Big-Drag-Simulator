@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag Race Simulator</title>
+    <link rel="icon" href="image/favicon.ico">
+    <link rel="stylesheet" href="css/style.light.css">
+    <script defer src="javascript/index.js"></script>
+    <script src="https://kit.fontawesome.com/65fd17a1f9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="dMainTitle">
+        <h1 id="MainTitle">Predef Casts!</h1>
+    </div>
+
+
+    <div id ="MainBlock">
+        <h2>🇺🇸Drag Race US🇺🇸</h2>
+        <div>
+            <button onclick="predefCast(us_season1, 'regular', 'top3')">US Season 1</button>
+            <button onclick="predefCast(us_season2, 'regular', 'top3')">US Season 2</button>
+            <button onclick="predefCast(us_season3, 'regular', 'top3', '', 'return')">US Season 3</button>
+            <button onclick="predefCast(us_season4, 'regular', 'top3', '', 'return')">US Season 4</button>
+            <button onclick="predefCast(us_season5, 'regular', 'top3')">US Season 5</button>
+            <button onclick="predefCast(us_season6, 'regular', 'top4', 's6-premiere')">US Season 6</button>
+            <button onclick="predefCast(us_season7, 'regular', 'top4', '', 'conjoined-queens')">US Season 7</button>
+            <button onclick="predefCast(us_season8, 'regular', 'top4', '', 'return')">US Season 8</button>
+            <button onclick="predefCast(us_season9, 'regular', 'LFTC', 's9-premiere')">US Season 9</button>
+            <button onclick="predefCast(us_season10, 'regular', 'LFTC')">US Season 10</button>
+            <button onclick="predefCast(us_season11, 'regular', 'LFTC')">US Season 11</button>
+            <button onclick="predefCast(us_season12, 'regular', 'top3', 's12-premiere')">US Season 12</button>
+            <button onclick="predefCast(us_season13, 'regular', 'LFTC', 'porkchop')">US Season 13</button>
+            <button onclick="predefCast(us_season14, 'regular', 'top5', 's14-premiere')">US Season 14</button>
+            <button onclick="predefCast(us_season15, 'regular', 'top3')">US Season 15</button>
+        </div>
+        
+        <h2>⭐️US All Stars⭐️</h2>
+        <div>
+            <button onclick="predefCast(allstars_1, 'team', 'teams')">All Stars Season 1</button>
+            <button onclick="predefCast(allstars_2, 'all-stars', 'top4', '', 'queensofcomedy')">All Stars Season 2</button>
+            <button onclick="predefCast(allstars_3, 'all-stars', 'jury', '', 'kittygirlgroup')">All Stars Season 3</button>
+            <button onclick="predefCast(allstars_4, 'all-stars', 'teams', '', 'lalaparuza')">All Stars Season 4</button>
+            <button onclick="predefCast(allstars_5, 'lipsync-assassin', 'top3')">All Stars Season 5</button>
+            <button onclick="predefCast(allstars_6, 'lipsync-assassin', 'top4', '', 'smackdown')">All Stars Season 6</button>
+            <button onclick="predefCast(allstars_7, 'all-winners', 'LFTC', '', '')">All Stars Season 7</button>
+            <button onclick="predefCast(allstars_8, 'lipsync-assassin', 'top3')">All Stars Season 8</button>
+        </div>
+        <h2>🌃Secret Celebrity Drag Race🌃</h2>
+        <button onclick="predefCast(scdr, 'regular', 'top3')">SCDR Season 1</button>
+        <h2>🌎vs The World🌎</h2>
+        <div>
+            <button onclick="predefCast(ukvstw, 'all-stars', 'LFTC')">UK vs The World</button>
+            <button onclick="predefCast(canvstw, 'all-stars', 'LFTC')">Canada vs The World</button>
+        </div>
+
+        <h2>🇬🇧Drag Race UK🇬🇧</h2>
+        <div>
+            <button onclick="predefCast(uk_season1, 'regular', 'top3')">UK Season 1</button>
+            <button onclick="predefCast(uk_season2, 'regular', 'top4', '', 'vote')">UK Season 2</button>
+            <button onclick="predefCast(uk_season3, 'regular', 'top3', 'uk3-premiere')">UK Season 3</button>
+            <button onclick="predefCast(uk_season4, 'regular', 'teams')">UK Season 4</button>
+        </div>
+
+        <h2>🇨🇦Canada's Drag Race🇨🇦</h2>
+        <div>
+            <button onclick="predefCast(can_season1, 'regular', 'top3')">CAN Season 1</button>
+            <button onclick="predefCast(can_season2, 'regular', 'LFTF')">CAN Season 2</button>
+            <button onclick="predefCast(can_season3, 'regular', 'teams')">CAN Season 3</button>
+        </div>
+
+        <h2>🇪🇸Drag Race España🇪🇸</h2>
+        <div>
+            <button onclick="predefCast(dres_season1, 'regular', 'top3')">ESP Season 1</button>
+            <button onclick="predefCast(dres_season2, 'regular', 'top4')">ESP Season 2</button>
+            <button onclick="predefCast(dres_season3, 'regular', 'top3')">ESP Season 3</button>
+        </div>
+
+        <h2>🇳🇿🇦🇺Drag Race Down Under🇳🇿🇦🇺</h2>
+        <div>
+            <button onclick="predefCast(drdu_season1, 'regular', 'top4', '' , 'return')">DU Season 1</button>
+            <button onclick="predefCast(drdu_season2, 'regular', 'top3')">DU Season 2</button>
+            <button onclick="predefCast(drdu_season3, 'regular', 'top3')">DU Season 3</button>
+        </div>
+        
+        <h2>🇹🇭Drag Race Thailand🇹🇭</h2>
+        <div>
+            <button onclick="predefCast(drt_season1, 'thailand', 'top3')">THAI Season 1</button>
+            <button onclick="predefCast(drt_season2, 'thailand', 'top3', '' , 'return')">THAI Season 2</button>
+        </div>
+
+        <h2>🇳🇱Drag Race Holland🇳🇱</h2>
+        <div>
+            <button onclick="predefCast(hol_season1, 'regular', 'top4')">HOLL Season 1</button>
+            <button onclick="predefCast(hol_season2, 'regular', 'top3')">HOLL Season 2</button>
+        </div>
+
+        <h2>🇮🇹Drag Race Italia🇮🇹</h2>
+        <div>
+            <button onclick="predefCast(drita, 'regular', 'top4')">ITA Season 1</button>
+            <button onclick="predefCast(drita_season2, 'regular', 'top4')">ITA Season 2</button>
+        </div>
+
+        <h2>🇫🇷Drag Race France🇫🇷</h2>
+        <div>
+            <button onclick="predefCast(drfr_season1, 'regular', 'LFTF')">FR Season 1</button>
+            <button onclick="predefCast(drfr_season2, 'regular', 'LFTF')">FR Season 2</button>
+        </div>
+
+        <h2>🇵🇭Drag Race Philippines🇵🇭</h2>
+        <div>
+            <button onclick="predefCast(drph, 'regular', 'LFTC')">PH Season 1</button>
+        </div>
+        
+        <h2>🇧🇪Drag Race Belgique🇧🇪</h2>
+        <div>
+            <button onclick="predefCast(drbl, 'regular', 'top3')">BE Season 1</button>
+        </div>
+        
+        <h2>🇸🇪Drag Race Sverige🇸🇪</h2>
+        <div>
+            <button onclick="predefCast(drsv, 'regular', 'top3')">SV Season 1</button>
+        </div>
+        
+        <h2>🇲🇽Drag Race México🇲🇽</h2>
+        <div>
+            <button onclick="predefCast(drmx, 'regular', 'top3')">MX Season 1</button>
+        </div>
+        <h2>🏡House Of Drag🏡</h2>
+        <div>
+            <button onclick="predefCast(hod1, 'lipsync-assassin', 'top3')">HOD Season 1</button>
+            <button onclick="predefCast(hod2, 'lipsync-assassin', 'top3')">HOD Season 2</button>
+        </div>
+        <hr>
+        <div>
+            <h3>Settings: <br></h3>
+            <input type="checkbox" id="immunity"> Add immunity
+            <input type="checkbox" id="disableDouble"> Disable double shantays and sashays
+            <input type="checkbox" id="riggory"> Disable Challenge Riggory
+            <input type="checkbox" id="riggoryLipsync"> Disable Lipsync Riggory
+            <input type="checkbox" id="rupaulm"> Choose Challenges
+            <p>Chocolate Bar Twist Settings: </p>
+            <input type="checkbox" id="chocolateBar"> Random
+            <input type="checkbox" id="chocolateBarChoosable"> Choosable
+            <p>Special Game Modes:</p>
+            <input type="checkbox" id="secret"> Secret Celebrity Drag Race Mode
+            <input type="checkbox" id="snatchonly"> Snatch Game Only Mode
+            <input type="checkbox" id="runwayonly"> Runway Smackdown Mode
+        </div>
+        <hr>
+        <div>
+            <p>
+                <big><a href="index.html" id="inblock">Back to main page</a></big>
+            </p>
+        </div>
+        <div id="result"></div>
+    </div>
+    <a href="#" class="toTop">
+        <i class="fa-solid fa-angle-up"></i>
+    </a>
+    <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+    <script>
+        kofiWidgetOverlay.draw('arainbow4u', {
+        'type': 'floating-chat',
+        'floating-chat.donateButton.text': 'Tip Rainbow!',
+        'floating-chat.donateButton.background-color': '#5bc0de',
+        'floating-chat.donateButton.text-color': '#323842'
+        });
+    </script>
+</body>
+</html>
+
