@@ -9649,7 +9649,7 @@ let allQueens = [
     argennis, cristian, gala, kero, margaret, matraka, vallarta, pixiePixie, regina, serenaM, vermelha, bunnyh, hugo, leidy, lola, luna, medulla, shavorn, trinityice, vulga,
     willy, bionica, claire, lilly, missG, rhubarb, stabitha, jen, kellyf, 
     chakra, chic, donna, electra, fab, jackieW, milli, poppylove, thirsty,
-    pangina, mollyOFD, kaosOFD, jinkxOFD, hannahOFD, vanityOFD, ellaOFD, briocheeOFD, victoriaOFD, arizona, astrid, bernie, katkat, dee, hana, m1ss, matilduh, pardaux, ov, tiny, veruschka
+    pangina, mollyOFD, kaosOFD, jinkxOFD, hannahOFD, vanityOFD, ellaOFD, briocheeOFD, victoriaOFD, arizona, astrid, bernie, katkat, dee, hana, m1ss, matilduh, pardaux, ovcunt, tiny, veruschka
     
 ].concat(allCustomQueens).sort((a, b) => a.getName().toLowerCase().localeCompare(b.getName().toLowerCase()));
 let allQueensCopy = [];
