@@ -9507,7 +9507,7 @@ let  pardaux = new Queen("Nicole Pardaux", 7, 7, 7, 7, 7, 7, 7, "Pardaux");
 let  ovcunt = new Queen("ØV CÜNT", 7, 7, 7, 7, 7, 7, 7, "ØVCÜNT");
 let  tiny = new Queen("Tiny DeLuxe", 7, 7, 7, 7, 7, 7, 7, "TinyDeLuxe");
 let  veruschka = new Queen("Veruschka Levels", 7, 7, 7, 7, 7, 7, 7, "Veruschka");
-let drph2 = [arizona, astrid, bernie, katkat, dee, hana, m1ss, matilduh, pardaux, ov, tiny, veruschka];
+let drph2 = [arizona, astrid, bernie, katkat, dee, hana, m1ss, matilduh, pardaux, ovcunt, tiny, veruschka];
 //DRAG RACE BELGIQUE
 let amanda = new Queen("Amanda Tears", 7, 6, 6, 6, 6, 8, 8, "AmandaTears");
 let athena = new Queen("Athena Sorgelikis", 9, 6, 7, 6, 8, 13, 9, "AthenaSorgelikis");
