@@ -157,6 +157,8 @@ function miniChallenge() {
 		miniChallengeScreen.createButton("Improv Challenge", "improvChallenge()");
         miniChallengeScreen.createButton("Branding Challenge", "marketingChallenge()");
         miniChallengeScreen.createButton("Runway Challenge", "runwaysmackdown()");
+        miniChallengeScreen.createButton("Lipsync Challenge", "secretcelebrity()");
+        
 
         
     }
@@ -264,31 +266,31 @@ class ComedyChallenge {
         } 
         let desc2;
         (function (desc2) {
-            desc2[desc2["love."] = 0] = "love.";
-            desc2[desc2["sex."] = 1] = "sex.";
-            desc2[desc2["crime."] = 2] = "crime.";
-            desc2[desc2["school."] = 3] = "school.";
-            desc2[desc2["a popular TV series."] = 4] = "a popular TV series.";
-            desc2[desc2["Drag Race."] = 5] = "Drag Race.";
-            desc2[desc2["Past Drag Race Contestants."] = 6] = "Past Drag Race Contestants.";
-            desc2[desc2["comedy."] = 7] = "comedy.";
-            desc2[desc2["a famous drag queen."] = 8] = "a famous drag queen.";
-            desc2[desc2["The Charisma, Uniqueness, Nerve and Talent."] = 9] = "The Charisma, Uniqueness, Nerve and Talent.";
+            desc2[desc2["love."] = 0] = "the roast of love.";
+            desc2[desc2["sex."] = 1] = "the roast of sex.";
+            desc2[desc2["crime."] = 2] = "the roast of crime.";
+            desc2[desc2["school."] = 3] = "the roast of school.";
+            desc2[desc2["a popular TV series."] = 4] = " the roast a popular TV series.";
+            desc2[desc2["Drag Race."] = 5] = "the roast of Drag Race.";
+            desc2[desc2["Past Drag Race Contestants."] = 6] = " the roast of Past Drag Race Contestants.";
+            desc2[desc2["comedy."] = 7] = " the roast of comedy.";
+            desc2[desc2["a famous drag queen."] = 8] = "the roast of a famous drag queen.";
+            desc2[desc2["The Charisma, Uniqueness, Nerve and Talent."] = 9] = "The Charisma, Uniqueness, Nerve and Talent Monolouges.";
             desc2[desc2["Draguation."] = 10] = "Draguation.";
-            desc2[desc2["The Kennedy Davenport Center Honors Hall of Shade."] = 11] = "The Kennedy Davenport Center Honors Hall of Shade.";
-            desc2[desc2["Pearly Gates."] = 12] = "Pearly Gates.";
-            desc2[desc2["the other competitors."] = 13] = "the other competitors.";
-            desc2[desc2["Brooke Lynn Hytes."] = 14] = "Brooke Lynn Hytes.";
+            desc2[desc2["The Kennedy Davenport Center Honors Hall of Shade."] = 11] = "The Kennedy Davenport Center Honors Hall of Shade Roast..";
+            desc2[desc2["Pearly Gates."] = 12] = "The Pearly Gates Roast.";
+            desc2[desc2["the other competitors."] = 13] = "the roast of the other competitors.";
+            desc2[desc2["Brooke Lynn Hytes."] = 14] = "the roast of Brooke Lynn Hytes.";
             desc2[desc2["The Who-Knows Awards."] = 15] = "The Who-Knows Awards.";
             desc2[desc2["A Bottomless Brunch."] = 16] = "A Bottomless Brunch.";
-            desc2[desc2["RuPaul."] = 17] = "RuPaul.";
+            desc2[desc2["RuPaul."] = 17] = "the roast of RuPaul.";
             desc2[desc2["The DESPY Awards."] = 18] = "The DESPY Awards.";
-            desc2[desc2["Ross Mathews."] = 19] = "Ross Mathews.";
-            desc2[desc2["Michelle Visage."] = 20] = "Michelle Visage.";
-            desc2[desc2["Carson Kressley."] = 21] = "Carson Kressley.";
-            desc2[desc2["Rainbow."] = 22] = "Rainbow.";
+            desc2[desc2["Ross Mathews."] = 19] = "the roast of Ross Mathews.";
+            desc2[desc2["Michelle Visage."] = 20] = "the roast of Michelle Visage.";
+            desc2[desc2["Carson Kressley."] = 21] = "the roast of Carson Kressley.";
+            desc2[desc2["Rainbow."] = 22] = "the roast of Nicky Doll.";
         })(desc2 || (desc2 = {}));
-        description.innerHTML = "This week, the queens will need to bring their best comedy skills to the table as they take part in the roast of " + desc2[randomNumber(0, 22)];
+        description.innerHTML = "This week, the queens will need to bring their best comedy skills to the table as they take part in " + desc2[randomNumber(0, 22)];
     }
     rankPerformances() {
         for (let i = 0; i < currentCast.length; i++)
@@ -1062,19 +1064,6 @@ class smackdownrunway {
 }
     
 
-function secretcelebrity() {
-    let challengeScreen = new Scene();
-    challengeScreen.clean();
-    challengeScreen.createHeader("Performances!");
-    challengeScreen.createParagraph("", "Description");
-    let challenge = new lipsyncs();
-    challenge.generateDescription();
-    queenSongs();
-    challenge.rankPerformances();
-    isDesignChallenge = true;
-    queensPerformances();
-    episodeChallenges.push("Results")
-}
 class lipsyncs {
     generateDescription() {
         document.body.style.backgroundImage = "url('image/scdr.png')";
@@ -9491,7 +9480,7 @@ let roseF = new Queen("Rose", 7, 7, 7, 7, 7, 7, 7, "RoseF");
 let sara = new Queen("Sara Forever", 7, 7, 7, 7, 7, 7, 7, "SaraForever");
 let vespi = new Queen("Vespi", 7, 7, 7, 7, 7, 7, 7, "Vespi");
 let drfr_season2 = [cookie, gingerB, keiona, kittyS, mami, moon, piche, punani, roseF, sara, vespi];
-//DRAG RACE PHILIPPINES
+//DRAG RACE PHILIPPINES SEASON 1
 let brigiding = new Queen("Brigiding", 6, 5, 8, 8, 4, 9, 10, "Brigiding");
 let corazon = new Queen("Corazon", 4, 5, 4, 3, 4, 7, 5, "Corazon");
 let eva = new Queen("Eva Le Queen", 6, 9, 8, 7, 8, 10, 8, "EvaLeQueen");
@@ -9505,6 +9494,20 @@ let turing = new Queen("Turing", 6, 6, 9, 6, 6, 7, 9, "Turing");
 let vinas = new Queen("Viñas DeLuxe", 6, 8, 8, 10, 8, 11, 7, "VinasDeLuxe");
 let xilhouete = new Queen("Xilhouete", 6, 10, 6, 8, 11, 10, 8, "Xilhouete");
 let drph = [brigiding, corazon, eva, gigiEra, morgana, marinaSummers, minty, precious, prince, turing, vinas, xilhouete];
+//DRAG RACE PHILIPPINES SEASON 2
+let arizona = new Queen("Arizona Brandy", 7, 7, 7, 7, 7, 7, 7, "Arizona");
+let astrid = new Queen("Astrid Mercury", 7, 7, 7, 7, 7, 7, 7, "Astrid");
+let bernie = new Queen("Bernie", 7, 7, 7, 7, 7, 7, 7, "Bernie");
+let katkat = new Queen("Captivating KatKat", 7, 7, 7, 7, 7, 7, 7, "KatKat");
+let  dee = new Queen("Dee Dee Marié Holliday", 7, 7, 7, 7, 7, 7, 7, "Dee");
+let  hana = new Queen("Hana Beshie", 7, 7, 7, 7, 7, 7, 7, "Hana");
+let  m1ss = new Queen("M1ss Jade So", 7, 7, 7, 7, 7, 7, 7, "M1ss");
+let  matilduh = new Queen("Matilduh", 7, 7, 7, 7, 7, 7, 7, "Matilduh");
+let  pardaux = new Queen("Nicole Pardaux", 7, 7, 7, 7, 7, 7, 7, "Pardaux");
+let  ov = new Queen("ØV CÜNT", 7, 7, 7, 7, 7, 7, 7, "ØVCÜNT");
+let  tiny = new Queen("Tiny DeLuxe", 7, 7, 7, 7, 7, 7, 7, "TinyDeLuxe");
+let  veruschka = new Queen("Veruschka Levels", 7, 7, 7, 7, 7, 7, 7, "Veruschka");
+let drph2 = [arizona, astrid, bernie, katkat, dee, hana, m1ss, matilduh, pardaux, ov, tiny, veruschka];
 //DRAG RACE BELGIQUE
 let amanda = new Queen("Amanda Tears", 7, 6, 6, 6, 6, 8, 8, "AmandaTears");
 let athena = new Queen("Athena Sorgelikis", 9, 6, 7, 6, 8, 13, 9, "AthenaSorgelikis");
@@ -9646,7 +9649,8 @@ let allQueens = [
     argennis, cristian, gala, kero, margaret, matraka, vallarta, pixiePixie, regina, serenaM, vermelha, bunnyh, hugo, leidy, lola, luna, medulla, shavorn, trinityice, vulga,
     willy, bionica, claire, lilly, missG, rhubarb, stabitha, jen, kellyf, 
     chakra, chic, donna, electra, fab, jackieW, milli, poppylove, thirsty,
-    pangina, mollyOFD, kaosOFD, jinkxOFD, hannahOFD, vanityOFD, ellaOFD, briocheeOFD, victoriaOFD
+    pangina, mollyOFD, kaosOFD, jinkxOFD, hannahOFD, vanityOFD, ellaOFD, briocheeOFD, victoriaOFD, arizona, astrid, bernie, katkat, dee, hana, m1ss, matilduh, pardaux, ov, tiny, veruschka
+    
 ].concat(allCustomQueens).sort((a, b) => a.getName().toLowerCase().localeCompare(b.getName().toLowerCase()));
 let allQueensCopy = [];
 let allQueensCopy2 = [];
